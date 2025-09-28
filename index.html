@@ -1,0 +1,138 @@
+<!-- B.Tech (CSE), Section-1, semester-1, My Portfolio -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yash Kaushik's Portfolio">
+    <title>Yash's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>/* used css (instead of deprecated attribute border) for table to keep code accessible, clean and semantic (credit:w3schools.com)*/
+    table.bordered{border-collapse: collapse;}
+    table.bordered th,
+    table.bordered td {border: 1px solid black; padding: 4px;}
+    </style>
+</head>
+<body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <h1>YASH KAUSHIK</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" title="Know me">About</a></li>
+                <li><a href="#projects" title="My creations">Projects</a></li>
+                <li><a href="#skills" title="My Achievements">Technical Skills</a></li>
+                <li><a href="#contact" title="Let's connect">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I am a web development student. This is my personal portfolio website.</p>
+        </section>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <main id="maincontent">
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me:</h2>
+            <img src="/images/profile.png" alt="Photo of Yash Kaushik" width="170">
+            <br>
+            <p>I am passionate about learning web development and building creative, clean and responsive websites.</p>
+            <p>I did my schooling from Holy Cross School, Najafgarh, New Delhi
+                where I developed skills in Python coding, volleyball, basketball, singing and more.
+                Beyond academics and activities, the life lessons and experiences I gained there, 
+                continue to shape who I am today.
+            </p>
+            <br>
+            <p>My School</p>
+            <img src="/images/school.webp" alt="Holy Cross School" width="300">
+        </section>
+        
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>My Projects:</h2>
+            <ul>
+                <li><a href="/index.html"><b>Portfolio Website:</b></a> A personal one-page bio to showcase my bio, skills and contact details</li>
+                <li><a href="/files/projects.html"><b>Websites Bookmark:</b></a> A simple page to save useful links</li>
+                <li><a href="/files/birthdaycard.html"><b>Birthday Card:</b></a> A creative greeting card webpage designed with HTML and CSS for styling (coming soon...)</li>
+                <li><a href="#contact"><b>User Form:</b></a> A form webpage with fields like Name, Email, Feedback, Gender</li>
+            </ul>
+        </section>
+        
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Technical Skills:</h2>
+            <table class="bordered">
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Learning</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Me:</h2>
+            <form action="/files/feedback.html" method="get">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input id="name" type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input id="email" type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="feedback">Feedback:</label></td>
+                        <td><textarea id="feedback" name="feedback"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input id="male" type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <br>
+                            <input id="female" type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit">
+                    <img src="/images/send.png" alt="Send" width="50">
+                </button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <h2>Let's Collaborate:</h2>
+        <a href="https://linkedin.com/in/yash-irongod"><img src="/images/linkedin.png" alt="LinkedIn Profile" width="40"></a>
+        <a href="https://github.com/yash-irongod"><img src="/images/github.png" alt="GitHub Profile" width="40"></a>
+        <a href="https://leetcode.com/yash-irongod"><img src="/images/leetcode.png" alt="LeetCode Profile" width="40"></a>
+        <a href="https://codechef.com/users/yash_irongod"><img src="/images/codechef.png" alt="CodeChef Profile" width="40"></a>
+        <hr>
+    </footer>
+</body>
+</html>
